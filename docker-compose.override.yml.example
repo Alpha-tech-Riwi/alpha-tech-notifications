@@ -1,0 +1,10 @@
+# Copy this file to docker-compose.override.yml and customize
+version: '3.8'
+
+services:
+  notification-service:
+    environment:
+      - DATABASE_PASSWORD=your_real_password
+      - JWT_SECRET=your_real_jwt_secret
+      - SMTP_PASS=your_real_smtp_password
+    # Add any local development overrides here
